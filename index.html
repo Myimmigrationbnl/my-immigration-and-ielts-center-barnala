@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Abroad & Immigration Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b63ce, #003b88);
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 80px 40px;
+      background: #eef4ff;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero-text h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #003b88;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 10px 18px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: #0b63ce;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background-color: #fff;
+      color: #0b63ce;
+      border: 1px solid #0b63ce;
+    }
+
+    .hero-image {
+      max-width: 380px;
+      margin-top: 20px;
+    }
+
+    .hero-image div {
+      width: 100%;
+      height: 220px;
+      background: #dbe6ff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #003b88;
+      font-weight: 600;
+      text-align: center;
+      padding: 20px;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    h3.section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #003b88;
+    }
+
+    .why-us,
+    .services,
+    .countries,
+    .testimonials,
+    .blog,
+    .contact {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      font-size: 14px;
+    }
+
+    .card h4 {
+      margin-bottom: 8px;
+      color: #0b63ce;
+      font-size: 16px;
+    }
+
+    .countries-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .country-pill {
+      padding: 8px 14px;
+      border-radius: 20px;
+      background-color: #fff;
+      border: 1px solid #d0d7f2;
+      font-size: 13px;
+    }
+
+    .testimonials-list .card {
+      border-left: 4px solid #0b63ce;
+    }
+
+    .blog-list .card h5 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #003b88;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 30px;
+    }
+
+    form label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      border: 1px solid #c7cfe8;
+      font-size: 13px;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    footer {
+      background-color: #0b63ce;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .hero {
+        padding: 40px 20px;
+      }
+
+      section {
+        padding: 40px 20px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>my Immigration and ielts center Barnala</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#countries">Countries</a>
+      <a href="#testimonials">Success Stories</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Study Abroad Made Simple & Transparent</h2>
+        <p>
+          We help students secure admissions and study visas for top universities across Canada, UK, Australia, USA and Europe—through honest guidance and a step‑by‑step process.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToSection('contact')">Book a Free Consultation</button>
+          <button class="btn-secondary" onclick="scrollToSection('services')">View Our Services</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div>
+          Your trusted partner for<br />
+          <strong>Study Visas & Admissions</strong><br />
+          95%+ visa success on eligible profiles
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <h3 class="section-title">Why Students Choose Us</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Specialised in Study Visas</h4>
+          <p>We focus primarily on student visas, which means deeper expertise in admissions, SOPs and visa filing.</p>
+        </div>
+        <div class="card">
+          <h4>Transparent & Ethical Guidance</h4>
+          <p>No false promises, no fake documents. We guide you honestly based on your profile and goals.</p>
+        </div>
+        <div class="card">
+          <h4>End‑to‑End Support</h4>
+          <p>From course selection to visa filing and pre‑departure guidance, we stay with you at every step.</p>
+        </div>
+        <div class="card">
+          <h4>Personalised Profile Evaluation</h4>
+          <p>We assess your academics, finances and goals to suggest the right country, course and pathway.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h3 class="section-title">Our Services</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Study Visa Consultation</h4>
+          <p>Country, course and university selection tailored to your academic background and budget.</p>
+        </div>
+        <div class="card">
+          <h4>Admission Guidance</h4>
+          <p>Application strategy, documentation and timelines to maximise your chances of getting offers.</p>
+        </div>
+        <div class="card">
+          <h4>SOP & Documentation Support</h4>
+          <p>Guidance on SOP, LORs and financial documents that align with visa and university requirements.</p>
+        </div>
+        <div class="card">
+          <h4>Visa Filing & Interview Prep</h4>
+          <p>Accurate visa filing, documentation review and preparation for interviews or visa officer questions.</p>
+        </div>
+        <div class="card">
+          <h4>Post‑Landing & Accommodation</h4>
+          <p>Basic support with accommodation options, airport pickup guidance and settling‑in tips.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="countries" id="countries">
+      <h3 class="section-title">Study Destinations</h3>
+      <p>We work with a wide network of institutions across major study‑abroad destinations.</p>
+      <div class="countries-list">
+        <span class="country-pill">Canada</span>
+        <span class="country-pill">United Kingdom</span>
+        <span class="country-pill">Australia</span>
+        <span class="country-pill">United States</span>
+        <span class="country-pill">Germany</span>
+        <span class="country-pill">Netherlands</span>
+        <span class="country-pill">Ireland</span>
+        <span class="country-pill">New Zealand</span>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <h3 class="section-title">Success Stories</h3>
+      <div class="testimonials-list cards">
+        <div class="card">
+          <p>
+            “I was confused between Canada and UK. The team guided me clearly, helped with my SOP and I received my Canadian study visa on the first attempt.”
+          </p>
+          <p><strong>— Amandeep, Canada (Business Management)</strong></p>
+        </div>
+        <div class="card">
+          <p>
+            “Very honest guidance. They clearly told me what was possible with my profile and suggested the right college and course. My UK visa was approved smoothly.”
+          </p>
+          <p><strong>— Priya, UK (Data Science)</strong></p>
+        </div>
+        <div class="card">
+          <p>
+            “From IELTS guidance to university selection and visa filing, everything was handled professionally. I always got clear answers to my doubts.”
+          </p>
+          <p><strong>— Rahul, Australia (IT)</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <h3 class="section-title">Guides & Updates</h3>
+      <div class="blog-list cards">
+        <div class="card">
+          <h5>How to Choose the Right Country for Your Profile</h5>
+          <p>A simple framework to compare countries based on budget, PR options, job market and study goals.</p>
+        </div>
+        <div class="card">
+          <h5>Common Reasons for Study Visa Refusals</h5>
+          <p>Understand what visa officers look for and how to avoid the most frequent rejection reasons.</p>
+        </div>
+        <div class="card">
+          <h5>What Makes a Strong SOP for Study Visa</h5>
+          <p>Key elements of a compelling Statement of Purpose that aligns with your genuine intent to study.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h3 class="section-title">Free Profile Assessment & Contact</h3>
+      <div class="contact-grid">
+        <div>
+          <p>Share your details and we’ll get back to you with a personalised study‑abroad plan.</p>
+          <form onsubmit="handleFormSubmit(event)">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="country">Preferred Study Country</label>
+            <select id="country">
+              <option value="">Select</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+              <option>Australia</option>
+              <option>United States</option>
+              <option>Germany</option>
+              <option>Netherlands</option>
+              <option>Ireland</option>
+              <option>New Zealand</option>
+            </select>
+
+            <label for="education">Current Education / Background</label>
+            <input type="text" id="education" placeholder="e.g. B.Com, 60%, 2022 pass‑out" />
+
+            <label for="score">IELTS / PTE Score (if any)</label>
+            <input type="text" id="score" placeholder="e.g. IELTS 6.5 overall" />
+
+            <label for="message">Your Query</label>
+            <textarea id="message" placeholder="Tell us about your plans or questions"></textarea>
+
+            <button type="submit" class="btn-primary">Submit Details</button>
+          </form>
+        </div>
+        <div>
+          <h4>Contact Details</h4>
+          <p><strong>Phone:</strong> +91-8360721708 / +91-9619617752 / +91-9876340075</p>
+          <p><strong>Email:</strong> info@globalpathwaysimmigration.com</p>
+          <p><strong>Office:</strong> Bus stand road, Near sardar handloom, barnala (serving students online across India & abroad)</p>
+          <br />
+          <h4>Office Hours</h4>
+          <p>Monday to Saturday: 10:00 AM – 6:00 PM</p>
+          <p>Online consultations available by appointment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> my Immigration and ielts center Barnala. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      alert("Thank you! Your details have been received. We will contact you shortly.");
+      event.target.reset();
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
